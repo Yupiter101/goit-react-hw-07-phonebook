@@ -1,7 +1,9 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { nanoid } from 'nanoid';
-import { addContact, getContacts } from "redux/contactSlice";
+// import { getContacts } from "redux/contactSlice";
+import { getContacts } from "redux/selectors";
+import { addContact } from "redux/operations";
 import css from "./ContactForm.module.css";
 
 
@@ -44,7 +46,7 @@ export function ContactForm() {
               className={css.InputContact}
               type="text"
               name="name"
-              pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
+              // pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
               title="Name may contain only letters, apostrophe, dash and spaces."
               required
             />
@@ -55,7 +57,7 @@ export function ContactForm() {
               className={css.InputContact}
               type="tel"
               name="number"
-              pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
+              // pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
             />

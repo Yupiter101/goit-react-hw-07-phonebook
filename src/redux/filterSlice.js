@@ -24,4 +24,4 @@ export const { setFilter } = filterSlice.actions;
 
 
 // ========== GET selectors =========
-export const getFilter = state => state.filter.filterName;
+// export const getFilter = state => state.filter.filterName;

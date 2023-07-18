@@ -1,8 +1,10 @@
 
 import { ContactItem } from "components/ContactItem/ContactItem";
 import { useSelector } from "react-redux";
-import { getContacts } from "redux/contactSlice";
-import { getFilter } from "redux/filterSlice";
+// import { getContacts } from "redux/contactSlice";
+// import { getFilter } from "redux/filterSlice";
+import { getContacts, getFilter } from "redux/selectors";
+
 import css from "./ContactList.module.css";
 
 
