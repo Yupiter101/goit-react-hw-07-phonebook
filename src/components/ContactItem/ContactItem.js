@@ -1,9 +1,8 @@
 
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { useDispatch } from "react-redux";
 import { MdClose } from "react-icons/md";
 import css from "./ContactItem.module.css";
-// import { deleteContact } from 'redux/contactSlice';
 import { deleteContact } from 'redux/operations';
 
 
@@ -26,11 +25,11 @@ export function ContactItem({ contactItem }) {
 }
 
 
-// ContactItem.propTypes = {
-//   contactItem: PropTypes.shape({
-//       id: PropTypes.string.isRequired,
-//       name: PropTypes.string.isRequired,
-//       number: PropTypes.string.isRequired,
-//     }).isRequired,
-// }
+ContactItem.propTypes = {
+  contactItem: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      number: PropTypes.string,
+    }).isRequired,
+}
 
